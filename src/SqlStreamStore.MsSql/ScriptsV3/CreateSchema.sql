@@ -55,7 +55,7 @@ BEGIN
         Position            BIGINT                 IDENTITY(0,1)    NOT NULL,
         Id                  UNIQUEIDENTIFIER                        NOT NULL,
         Created             DATETIME                                NOT NULL,
-        [Type]              NVARCHAR(128)                           NOT NULL,
+        [Type]              NVARCHAR(512)                           NOT NULL,
         JsonData            NVARCHAR(max)                           NOT NULL,
         JsonMetadata        NVARCHAR(max)                                   ,
         CONSTRAINT PK_Events PRIMARY KEY CLUSTERED (Position),
@@ -96,7 +96,7 @@ BEGIN
         StreamVersion       INT IDENTITY(0,1)                       NOT NULL,
         Id                  UNIQUEIDENTIFIER                        NOT NULL,
         Created             DATETIME          DEFAULT(GETUTCDATE()) NOT NULL,
-        [Type]              NVARCHAR(128)                           NOT NULL,
+        [Type]              NVARCHAR(512)                           NOT NULL,
         JsonData            NVARCHAR(max)                           NULL,
         JsonMetadata        NVARCHAR(max)                           NULL
     );
