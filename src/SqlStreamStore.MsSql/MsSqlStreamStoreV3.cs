@@ -56,7 +56,7 @@
                 new SqlMetaData("StreamVersion", SqlDbType.Int, true, false, SortOrder.Unspecified, -1),
                 new SqlMetaData("Id", SqlDbType.UniqueIdentifier),
                 new SqlMetaData("Created", SqlDbType.DateTime, true, false, SortOrder.Unspecified, -1),
-                new SqlMetaData("Type", SqlDbType.NVarChar, 512),
+                new SqlMetaData("Type", SqlDbType.NVarChar, 1024),
                 new SqlMetaData("JsonData", SqlDbType.NVarChar, SqlMetaData.Max),
                 new SqlMetaData("JsonMetadata", SqlDbType.NVarChar, SqlMetaData.Max)
             };
